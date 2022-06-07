@@ -71,7 +71,7 @@ int EnumAllProc(PCSTR mod)
 	}
 	if (Process32First(th32, &pe))
 	{
-		printf("\nlist of processes contain this module ");
+		printf("\nlist of processes that contains this module ");
 		if (modules(pe.th32ProcessID, mod))
 			printf("\nprocess pid %lX\n", pe.th32ProcessID);
 		do
