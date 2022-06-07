@@ -71,7 +71,7 @@ int EnumAllProc(PCSTR mod)
 	}
 	if (Process32First(th32, &pe))
 	{
-		printf("\nlist of processes that contains this module ");
+		printf("\nlist of processes contain this module ");
 		if (modules(pe.th32ProcessID, mod))
 			printf("\nprocess pid %lX\n", pe.th32ProcessID);
 		do
@@ -110,6 +110,7 @@ int wmain(void)
 		{
 			if (bytes[i + 1] == 0xB8 || bytes[i + 1] == 0xE0)
 			{
+				MessageBoxA(0, "hook detected", "Alert", 0);
 				IE0 = 1;
 				break;
 			}
@@ -117,7 +118,7 @@ int wmain(void)
 	}
 	if (!IE0)
 	{
-		MessageBoxA(0, "no hook detected", 0, MB_OK);
+		MessageBoxA(0, "no hook detected", "Alert", MB_OK);
 		return (-1);
 	}
 	MEMORY_BASIC_INFORMATION data;
@@ -152,7 +153,7 @@ int wmain(void)
 	printf("\n\nthe hooked function jumps to this module (could be av/malicious module)\n");
 	printf("base_address : %llX\nmodule_size %u\nmodule_name %s\n", data.AllocationBase, data.RegionSize, dllpath2);
 	if (EnumAllProc(PathFindFileNameA((LPCSTR)dllpath2)) <= 1)
-		return (0);
-	system("pause");
+		system("pause");
+	
 	return (0);
 }
