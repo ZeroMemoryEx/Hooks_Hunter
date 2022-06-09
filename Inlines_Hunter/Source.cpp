@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_URE_NO_WARNINGS
 #include <Windows.h>
 #include <tlhelp32.h>
 #include <stdio.h>
@@ -142,9 +142,6 @@ int wmain(void)
 	unsigned long long s_1[] = { sortedAdd[0], sortedAdd[1],sortedAdd[2],sortedAdd[3],sortedAdd[4],sortedAdd[5] };
 	long long njumpAdd = (s_1[0] << 40) | (s_1[1] << 32) | (s_1[2] << 24) | (s_1[3] << 16) | (s_1[4] << 8) | (s_1[5]);
 	printf("jump_to %llX \n", njumpAdd);
-	unsigned char secjump[12] = { 0 };
-	if (!ReadProcessMemory(hw, (LPCVOID)njumpAdd, &secjump, sizeof(secjump), 0))
-		return (-1);
 	if (!VirtualQueryEx(hw, (LPCVOID)njumpAdd, &data, sizeof(MEMORY_BASIC_INFORMATION)))
 		return (-1);
 	hdll = (HMODULE)data.AllocationBase;
