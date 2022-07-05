@@ -1,4 +1,4 @@
-# Inlines_Hunter
+# Hooks_Hunter
 * inline Hooking is the act of detouring the flow of code via hotpatching. Hotpatching is defined as the modification of code during the runtime of an executable . The purpose of inline hooking to be able to capture the instance the program calls a function and then from there, observation and/or manipulation of the call can be accomplished
 * the purpose of this project is to Detect API Hooks by scanning opcodes patterns then follow the jump address, and see if it jumps to a legitimate module or injected/malicious module from the av/malware and locate that module in all processes .
 
