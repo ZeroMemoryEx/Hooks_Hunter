@@ -3,7 +3,7 @@
 
 * Example of an inline hook 
 
-![image](https://user-images.githubusercontent.com/60795188/180610747-b5428363-939a-4afe-965a-bb0b9c93ebfb.png)
+  ![image](https://user-images.githubusercontent.com/60795188/180610747-b5428363-939a-4afe-965a-bb0b9c93ebfb.png)
 
 * the purpose of this project is to Detect API Hooks by scanning opcodes patterns then follow the jump address, and see if it jumps to a legitimate module or injected/malicious module from the av/malware and locate that module in all processes .
 
