@@ -13,13 +13,20 @@
 
 
 # DETAILS
+
 * first the program will scan for any hooking signs if any hook detected its will read the jump address and follow the jump address and retrieves the base address of the jump address then enumerate over all processes modules in the system and locate that module in all of them.
 
+* an Example of hooked function
+
   ![image](https://user-images.githubusercontent.com/60795188/161443202-3aac7d65-388a-46a6-aef7-738440410c5e.png)
+
+* if hook detected an alert will pop up
 
   ![image](https://user-images.githubusercontent.com/60795188/166088109-bf09e1a4-e8b1-440c-8e5c-add6bbad1c10.png)
   
 * if no hook detected , a MessageBox will pop up with alert 'no hook detected'
+
+* an example of clean function 
 
   ![image](https://user-images.githubusercontent.com/60795188/161444125-32d3257d-e1f3-4a36-bd0f-762cef48c96c.png)
 
