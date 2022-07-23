@@ -13,7 +13,8 @@
 
 
 # DETAILS
-* if any hook detected ,a MessageBox will pop up with alert 'hook detected' ,with all the details in console.
+* first the program will scan for any hooking signs if any hook detected its will read the jump address and follow the jump address and retrieves the base address of the jump address then enumerate over all processes modules in the system and locate that module in all of them.
+
   ![image](https://user-images.githubusercontent.com/60795188/161443202-3aac7d65-388a-46a6-aef7-738440410c5e.png)
 
   ![image](https://user-images.githubusercontent.com/60795188/166088109-bf09e1a4-e8b1-440c-8e5c-add6bbad1c10.png)
