@@ -7,14 +7,9 @@
 
 * the purpose of this project is to Detect API Hooks by scanning opcodes patterns then follow the jump address, and see if it jumps to a legitimate module or injected/malicious module from the av/malware and locate that module in all processes .
 
-  # VIDEO
-
-  https://user-images.githubusercontent.com/60795188/172503817-da29f7bb-af4c-4e62-b993-4ecbd47d432d.mp4
-
-
 # DETAILS
 
-* first the program will scan for any hooking signs if any hook detected its will read the jump address and follow the jump address and retrieves the base address of the jump address then enumerate over all processes modules in the system and locate that module in all of them.
+* first the program will scan for any hooking signs if any hook detected its will read the jump address and follow it and retrieves the base address of the jump address then enumerate over all processes modules in the system and locate that module in all of them.
 
 * an Example of hooked function
 
@@ -32,3 +27,6 @@
 
   ![image](https://user-images.githubusercontent.com/60795188/166088203-6d6ba2dc-a51b-4ace-91e6-f2e42cdbf26f.png)
   
+  # VIDEO
+
+  https://user-images.githubusercontent.com/60795188/172503817-da29f7bb-af4c-4e62-b993-4ecbd47d432d.mp4
