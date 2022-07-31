@@ -1,7 +1,7 @@
 # Hooks_Hunter
-* inline Hooking is the act of detouring the flow of code via hotpatching. Hotpatching is defined as the modification of code during the runtime of an executable . The purpose of inline hooking to be able to capture the instance the program calls a function and then from there, observation and/or manipulation of the call can be accomplished
+* API Hooking is the act of detouring the flow of code via hotpatching. Hotpatching is defined as the modification of code during the runtime of an executable . The purpose of inline hooking to be able to capture the instance the program calls a function and then from there, observation and/or manipulation of the call can be accomplished
 
-* Example of an inline hook 
+* Example of an API hook 
 
   ![image](https://user-images.githubusercontent.com/60795188/180610747-b5428363-939a-4afe-965a-bb0b9c93ebfb.png)
 
