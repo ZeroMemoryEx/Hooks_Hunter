@@ -5,28 +5,27 @@
 
   ![image](https://user-images.githubusercontent.com/60795188/180610747-b5428363-939a-4afe-965a-bb0b9c93ebfb.png)
 
-* the purpose of this project is to Detect API Hooks by scanning opcodes patterns then follow the jump address, and see if it jumps to a legitimate module or injected/malicious module from the av/malware and locate that module in all processes .
+* this technique is used by user-mode rootkits to monitor/intercept system calls and manipulate values returned by APIs to gain control of the machine .
+
+
+* the purpose of this project is to Detect user-mode API Hooks by scanning opcodes patterns then follow the jump address, and see if it jumps to a legitimate module or malicious module from the AV/malware and locate that module in all processes to get a full view of the affected processes .
 
 # DETAILS
 
-* first the program will scan for any hooking signs if any hook detected its will read the jump address and follow it and retrieves the base address of the jump address then enumerate over all processes modules in the system and locate that module in all of them.
-
-* an Example of hooked function
+* an Example of hooked flow
 
   ![image](https://user-images.githubusercontent.com/60795188/161443202-3aac7d65-388a-46a6-aef7-738440410c5e.png)
 
-* if hook detected an alert will pop up
+* first the program will scan for any hooking signs if any hook detected its will read the jump address and follow it and retrieves the base address of the jump address then enumerate over all processes modules in the system and locate that module in all of them.
 
-  ![image](https://user-images.githubusercontent.com/60795188/166088109-bf09e1a4-e8b1-440c-8e5c-add6bbad1c10.png)
-  
-* if no hook detected , a MessageBox will pop up with alert 'no hook detected'
-
-* an example of clean function 
+* an example of clean flow 
 
   ![image](https://user-images.githubusercontent.com/60795188/161444125-32d3257d-e1f3-4a36-bd0f-762cef48c96c.png)
 
-  ![image](https://user-images.githubusercontent.com/60795188/166088203-6d6ba2dc-a51b-4ace-91e6-f2e42cdbf26f.png)
-  
   # VIDEO
 
   https://user-images.githubusercontent.com/60795188/172503817-da29f7bb-af4c-4e62-b993-4ecbd47d432d.mp4
+
+# lastly
+
+* altough this detection can be bypassed easly using IAT hooking or any kernel mode rootkit .
