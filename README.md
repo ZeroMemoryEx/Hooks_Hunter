@@ -1,4 +1,5 @@
 # Hooks_Hunter
+## introduction
 * API Hooking is the act of detouring the flow of code via hotpatching. Hotpatching is defined as the modification of code during the runtime of an executable . The purpose of inline hooking to be able to capture the instance the program calls a function and then from there, observation and/or manipulation of the call can be accomplished
 
 * Example of an API hook 
@@ -10,7 +11,8 @@
 
 * the purpose of this project is to Detect user-mode API Hooks by scanning opcodes patterns then follow the jump address, and see if it jumps to a legitimate module or malicious module from the AV/malware and locate that module in all processes to get a full view of the affected processes .
 
-# DETAILS
+  [source code ](https://github.com/ZeroMemoryEx/Hooks_Hunter/blob/master/Inlines_Hunter/Source.cpp)
+## DETAILS
 
 * an Example of hooked flow
 
@@ -22,10 +24,10 @@
 
   ![image](https://user-images.githubusercontent.com/60795188/161444125-32d3257d-e1f3-4a36-bd0f-762cef48c96c.png)
 
-  # VIDEO
+## VIDEO
 
   https://user-images.githubusercontent.com/60795188/172503817-da29f7bb-af4c-4e62-b993-4ecbd47d432d.mp4
 
-# lastly
+## lastly
 
 * altough this detection can be bypassed easly using IAT hooking or any kernel mode rootkit .
