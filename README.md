@@ -11,7 +11,6 @@
 
 * the purpose of this project is to Detect user-mode API Hooks by scanning opcodes patterns then follow the jump address, and see if it jumps to a legitimate module or malicious module from the AV/malware and locate that module in all processes to get a full view of the affected processes .
 
-  [source code ](https://github.com/ZeroMemoryEx/Hooks_Hunter/blob/master/Inlines_Hunter/Source.cpp)
 ## DETAILS
 
 * an Example of hooked flow
